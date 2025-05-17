@@ -13,8 +13,7 @@
 - db.movies.insert({title:"Pee Wee Herman's Big Adventures"})
 - db.movies.insert({title:"Avatar"})
 #### Next is to find the following movie collection
-- db.movies.find()
-
+- db.movies.find() <br>
 <img src="images/pic1.PNG" alt="Alt Text" Width="900" heigth="300">
 
 <img src="images/pic2.PNG" alt="Alt Text" Width="900" heigth="300">
@@ -27,6 +26,7 @@
 - db.movies.find({franchise:"The Hobbit"})
 - db.movies.find({year:{$gt:"1990", $lt:"2000"}})
 - db.movies.find({$or:[{year:{$gt:"2010"}},{year: {$lt:"2000"}}]})
+<br>
 <img src="images/pic4.PNG" alt="Alt Text" Width="900" heigth="300">
 
 <img src="images/pic5.PNG" alt="Alt Text" Width="900" heigth="300">
@@ -41,6 +41,7 @@
 - db.movies.update({_id:ObjectId("5c9f98e5e5c2dfe9b3729bfe")}, {$set:{synopsis:"A reluctant hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home - and the gold within it - from the dragon Smaug."}})
 - db.movies.update({_id:ObjectId("5c9fa42ae5c2dfe9b3729c03")}, {$set:{synopsis:"The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor, their homeland, from Smaug. Bilbo Baggins is in possession of a mysterious and magical ring."}})
 - db.movies.update({_id:ObjectId("5c9f983ce5c2dfe9b3729bfc")}, {$push:{actors:"Samuel L. Jackson"}})
+<br>
 <img src="images/pic9.PNG" alt="Alt Text" Width="900" heigth="300">
 
 <img src="images/pic10.PNG" alt="Alt Text" Width="900" heigth="300">
@@ -55,6 +56,7 @@
 - db.movies.find({$and:[{synopsis:{$regex:"Bilbo"}}, {synopsis:{$not:/Gandalf/}}]})
 - db.movies.find({$or:[{synopsis:{$regex:"dwarves"}}, {synopsis:{$regex:"hobbit"}}]})
 - db.movies.find({$and:[{synopsis:{$regex:"gold"}}, {synopsis:{$regex:"dragon"}}]})
+<br>
 <img src="images/pic13.PNG" alt="Alt Text" Width="900" heigth="300">
 
 <img src="images/pic14.PNG" alt="Alt Text" Width="900" heigth="300">
@@ -68,7 +70,7 @@
 #### Next is delete the following documents
 - db.movies.remove({_id:ObjectId("5c9f992ae5c2dfe9b3729c00")})
 - db.movies.remove({_id:ObjectId("5c9f9936e5c2dfe9b3729c01")})
-</p>
+  <br>
 <img src="images/pic18.PNG" alt="Alt Text" Width="900" heigth="300">
 
 <img src="images/pic19.PNG" alt="Alt Text" Width="900" heigth="300">
