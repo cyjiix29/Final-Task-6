@@ -68,6 +68,7 @@
 #### Next is delete the following documents
 - db.movies.remove({_id:ObjectId("5c9f992ae5c2dfe9b3729c00")})
 - db.movies.remove({_id:ObjectId("5c9f9936e5c2dfe9b3729c01")})
+</p>
 <img src="images/pic18.PNG" alt="Alt Text" Width="900" heigth="300">
 
 <img src="images/pic19.PNG" alt="Alt Text" Width="900" heigth="300">
